@@ -15,6 +15,7 @@
   --tertiary-color: rgb(50, 50, 50);
   --caption-color: rgb(180, 180, 180);
   --highlighter: rgb(38, 52, 67);
+  --shadows: rgb(0, 14, 29);
 }
 body {
   margin: 0;
@@ -46,7 +47,7 @@ header {
   font-size: 36px;
   padding: 30px;
   text-align: center;
-  text-shadow: 2px 2px var(--highlighter);
+  text-shadow: 2px 3px var(--shadows);
 }
 footer {
   background-image: var(--wallpaper-image);
@@ -55,9 +56,20 @@ footer {
   background-size: 100%;
   background-position: bottom;
 
+  color: white;
+  font-size: 24px;
   padding: 30px;
+  text-align: center;
+  text-shadow: 2px 3px var(--shadows);
 }
 
+footer img {
+  border-radius: 40px;
+  background-color: var(--secondary-color);
+  box-shadow: 2px 3px var(--shadows);
+  max-width: 100px;
+  padding: 8px;
+}
 /* navbar css */
 nav {
   position: sticky;
