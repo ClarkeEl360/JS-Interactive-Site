@@ -50,7 +50,7 @@ header {
   text-shadow: 2px 3px var(--shadows);
 }
 footer {
-  background-image: var(--wallpaper-image);
+  background-image: url(images/Sailors-9th-But-Tall.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -137,9 +137,18 @@ nav .active {
 
 
 /* left right image formating */
-.left-right {
+.left-right-no-auto {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  column-gap: 5px;
+  grid-template-areas: 
+  "left-up right-up"
+  "left-down right-down"
+}
+.left-right {
+  display: grid;
+  grid-template-columns: 1fr auto;
 
   column-gap: 5px;
   grid-template-areas: 
@@ -154,9 +163,8 @@ nav .active {
   color: var(--caption-color)
 
 }
-.left-right-img {
-  background-image: var(--wallpaper-image);
-  
+.left-right img {
+  max-width: 300px;
 }
 .left-right .left-up {
   grid-area: left-up;
@@ -187,25 +195,3 @@ nav .active {
   background-color: var(--secondary-color);
 }
 
-
-
-/* testing */
-.test-left-right {
-  display: grid;
-  grid-template-columns: 0.8fr 1fr;
-  column-gap: 5px;
-  grid-template-areas: 
-  "text image1"
-  "text image2"
-}
-.test-text {
-  grid-area: text;
-}
-.test-image-1 {
-  grid-area: image1;
-  object-fit: contain;
-}
-.test-image-2 {
-  grid-area: image2;
-  object-fit: contain;
-}
