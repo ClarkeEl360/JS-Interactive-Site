@@ -420,9 +420,7 @@ nav .active {
   "left-down"
   "right-down"
 }
-.left-right img {
-  max-width: 300px;
-}
+
 .left-right .left-up {
   grid-area: left-up;
   margin: 4px;
@@ -516,9 +514,7 @@ nav .active {
   "left-down"
   "right-down"
 }
-.left-right-auto-left img {
-  max-width: 300px;
-}
+
 .left-right-auto-left .left-up {
   grid-area: left-up;
   margin: 4px;
