@@ -272,6 +272,279 @@ nav .active {
 
 
 
-/* Mobile View */
 
-@media
+
+
+
+/* Mobile View */
+@media (max-width: 600px) {
+  :root {
+  --background-color: rgb(255, 255, 255);
+  --wallpaper-image: url(images/Sailors-9th.png);
+  --primary-color: rgb(0, 0, 0);
+  --secondary-color: rgb(124, 124, 124);
+  --tertiary-color: rgb(50, 50, 50);
+  --caption-color: rgb(180, 180, 180);
+  --highlighter: rgb(38, 52, 67);
+  --shadows: rgb(0, 14, 29);
+}
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  padding: 16px;
+}
+hr {
+  border: 3px solid var(--tertiary-color);
+  box-shadow: 2px 2px;
+}
+.layered {
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+
+/* header and footer */
+header {
+  background-image: var(--wallpaper-image);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+
+  color: white;
+  font-size: 36px;
+  padding: 30px;
+  text-align: center;
+  text-shadow: 2px 3px var(--shadows);
+}
+footer {
+  background-image: url(images/Sailors-9th-But-Tall.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: bottom;
+
+  color: white;
+  font-size: 24px;
+  padding: 30px;
+  text-align: center;
+  text-shadow: 2px 3px var(--shadows);
+}
+
+footer img {
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  box-shadow: 2px 3px var(--shadows);
+  max-width: 60px;
+  padding: 8px;
+}
+/* navbar css */
+nav {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+nav a:active {
+  background-color: var(--highlighter);
+  color: white;
+}
+nav .active {
+  background-color: var(--highlighter);
+  color: white;
+}
+
+
+
+
+/* simple grid-template-areas css */
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "image content"
+    "footer footer";
+  grid-template-columns: 1.5fr 2.5fr;
+  gap: 3px;
+  padding: 20px;
+}
+/* set teplate area names */
+.grid-header {
+  grid-area: header;
+  text-align: center;
+  background-color: red;
+}
+.grid-image {
+  grid-area: image;
+  background-color: orange;
+}
+.grid-content {
+  grid-area: content;
+  background-color: purple;
+}
+.grid-footer {
+  grid-area: footer;
+  text-align: center;  
+  background-color: aqua;
+}
+
+
+
+
+/* left right image formating */
+.left-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+  column-gap: 5px;
+  grid-template-areas: 
+  "left-up"
+  "right-up"
+  "left-down"
+  "right-down"
+}
+.left-right img {
+  max-width: 300px;
+}
+.left-right .left-up {
+  grid-area: left-up;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+.left-right .left-down {
+  grid-area: left-down;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+.left-right .right-up {
+  grid-area: right-up;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+.left-right .right-down {
+  grid-area: right-down;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+
+/* right side of fromat is set to auto */
+.left-right-auto-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+  column-gap: 5px;
+  grid-template-areas: 
+  "left-up"
+  "right-up"
+  "left-down"
+  "right-down"
+}
+.left-right-caption {
+  font-size: small;
+  text-align: right;
+  padding: 1px;
+  margin: 1px;
+  color: var(--caption-color)
+
+}
+
+.left-right-auto-right .left-up {
+  grid-area: left-up;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+.left-right-auto-right .left-down {
+  grid-area: left-down;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+.left-right-auto-right .right-up {
+  grid-area: right-up;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+.left-right-auto-right .right-down {
+  grid-area: right-down;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+
+/* left side of format is set to auto */
+.left-right-auto-left {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+  column-gap: 5px;
+  grid-template-areas: 
+  "left-up"
+  "right-up"
+  "left-down"
+  "right-down"
+}
+.left-right-auto-left img {
+  max-width: 300px;
+}
+.left-right-auto-left .left-up {
+  grid-area: left-up;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+.left-right-auto-left .left-down {
+  grid-area: left-down;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+.left-right-auto-left .right-up {
+  grid-area: right-up;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+.left-right-auto-left .right-down {
+  grid-area: right-down;
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 4px 4px;
+  background-color: var(--secondary-color);
+}
+}
