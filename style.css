@@ -36,6 +36,34 @@ hr {
   background-color: var(--secondary-color);
 }
 
+label {
+  background-color: rgb(99, 99, 99);
+  box-shadow: 2px 2px;
+  padding: 3px;
+  margin: 2px;
+}
+input {
+  background-color: var(--tertiary-color);
+  box-shadow: 2px 2px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 22px;
+  color: rgb(117, 117, 117);
+}
+select {
+  background-color: var(--tertiary-color);
+  box-shadow: 2px 2px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 22px;
+  color: rgb(117, 117, 117);
+}
+button {
+  background-color: var(--tertiary-color);
+  color: white;
+  font-size: 30px;
+}
+
 /* header and footer */
 header {
   background-image: var(--wallpaper-image);

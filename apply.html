@@ -26,18 +26,34 @@
       </div>
       <div class="left-down" style="margin: 5px 4px">
         <div class="form-control">
-          <label for="username">Name</label>
-          <input type="text" id="left_name" placeholder="Enter username"><br>
+          <label for="name">Name:</label>
+          <input type="text" id="left_name" placeholder="*Enter name"><br>
           <span id="left_name_error"></span>
         </div>
         
         
         <div class="form-control">
-          <label for="email">Email</label>
-          <input type="text" id="left_email" placeholder="Enter email"><br>
+          <label for="email">Email:</label>
+          <input type="text" id="left_email" placeholder="*Enter email"><br>
           <span id="left_email_error"></span>
         </div>
-      
+
+        <label for="left_role">Choose a role:</label>
+        <select id="left_role" name="left_role">
+          <option value="none">*Choose A Role</option>
+          <option value="p01">(P-01)Crew Member</option>
+          <option value="p02">(P-02)Captain</option>
+          <option value="p03">(P-03)Helmsman</option>
+          <option value="p04">(P-04)Crew Member</option>
+        </select>
+
+        <br><br>
+        <div class="form-control">
+          <label for="more_info">More About You:</label><br>
+          <input style="width: 95%" type="text" id="more_info" placeholder="Type Here">
+        </div>
+
+        <br><br>
         <button type="submit">Submit</button>
       </div>
     </form>
@@ -51,18 +67,34 @@
       </div>
       <div class="right-down" style="margin: 5px 4px">
         <div class="form-control">
-          <label for="username">Name</label>
-          <input type="text" id="right_name" placeholder="Enter username"><br>
+          <label for="name">Name:</label>
+          <input type="text" id="right_name" placeholder="*Enter name"><br>
           <span id="right_name_error"></span>
         </div>
-        
-        
+
+
         <div class="form-control">
-          <label for="email">Email</label>
-          <input type="text" id="right_email" placeholder="Enter email"><br>
+          <label for="email">Email:</label>
+          <input type="text" id="right_email" placeholder="*Enter email"><br>
           <span id="right_email_error"></span>
         </div>
-      
+
+        <label for="right_role">Choose a role:</label>
+        <select id="right_role" name="right_role">
+          <option value="none">*Choose A Role</option>
+          <option value="p01">(P-01)Crew Member</option>
+          <option value="p02">(P-02)Captain</option>
+          <option value="p03">(P-03)Helmsman</option>
+          <option value="p04">(P-04)Crew Member</option>
+        </select>
+
+        <br><br>
+        <div class="form-control">
+          <label for="more_info">More About You:</label><br>
+          <input style="width: 95%" type="text" id="more_info" placeholder="Type Here">
+        </div>
+
+        <br><br>
         <button type="submit">Submit</button>
       </div>
     
