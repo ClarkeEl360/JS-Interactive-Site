@@ -18,21 +18,56 @@
 <main>
   <h1>PLACE HOLDER</h1>
   <hr>
-  <form id="form" class="form">
-    <h2>Register</h2>
-    <div class="form-control">
-      <label for="username">Name</label>
-      <input type="text" id="name" placeholder="Enter username"><br>
-      <span id="name_error"></span>
-    </div>
-    <div class="form-control">
-      <label for="email">Email</label>
-      <input type="text" id="email" placeholder="Enter email">
-      <span id="email_error"></span>
-    </div>
+  <div class="left-right">
+    <form id="left_form" class="form">
+    
+      <div class="left-up">
+        <h2>Register For an Open Role</h2>
+      </div>
+      <div class="left-down" style="margin: 5px 4px">
+        <div class="form-control">
+          <label for="username">Name</label>
+          <input type="text" id="left_name" placeholder="Enter username"><br>
+          <span id="left_name_error"></span>
+        </div>
+        
+        
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="left_email" placeholder="Enter email"><br>
+          <span id="left_email_error"></span>
+        </div>
+      
+        <button type="submit">Submit</button>
+      </div>
+    </form>
 
-    <button type="submit">Submit</button>
-  </form>
+
+
+
+    <form id="right_form" class="form">
+      <div class="right-up">
+        <h2>Register For a Held Position</h2>
+      </div>
+      <div class="right-down" style="margin: 5px 4px">
+        <div class="form-control">
+          <label for="username">Name</label>
+          <input type="text" id="right_name" placeholder="Enter username"><br>
+          <span id="right_name_error"></span>
+        </div>
+        
+        
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="right_email" placeholder="Enter email"><br>
+          <span id="right_email_error"></span>
+        </div>
+      
+        <button type="submit">Submit</button>
+      </div>
+    
+    </form>
+  </div>
 </main>
 <footer><br><br><br><br><br><br><br><br><br><br></footer>
 <script src="apply.js"></script>
