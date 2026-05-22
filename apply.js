@@ -8,9 +8,11 @@ const left_form = document.getElementById("left_form");
 
 const left_name = document.getElementById("left_name");
 const left_email = document.getElementById("left_email");
+const left_role = document.getElementById("left_role");
 
 const left_name_error = document.getElementById("left_name_error");
 const left_email_error = document.getElementById("left_email_error");
+
 
 
 
