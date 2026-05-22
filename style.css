@@ -40,15 +40,21 @@ label {
   background-color: rgb(99, 99, 99);
   box-shadow: 2px 2px;
   padding: 3px;
-  margin: 2px;
+  margin: 5px 0px 0px;
 }
 input {
   background-color: var(--tertiary-color);
   box-shadow: 2px 2px;
   padding: 5px;
-  margin: 5px;
+  margin: 5px 0px 0px;
   font-size: 22px;
   color: rgb(117, 117, 117);
+}
+span {
+  font-size: 15px;
+  padding: 1px;
+  margin: 1px;
+  color: rgb(73, 73, 73);
 }
 select {
   background-color: var(--tertiary-color);
